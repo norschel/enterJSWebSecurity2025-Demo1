@@ -22,7 +22,7 @@ jobs:
         node-version: 10.16.3
         
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ./Source/Tailwind.Traders.Web.sln
       
     - name: Dependency Review
       uses: actions/dependency-review-action@v4.8.0
